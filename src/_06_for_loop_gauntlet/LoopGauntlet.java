@@ -17,7 +17,37 @@ public static void main(String[] args) {
 			System.out.println(l);
 		}
 	}
+	one=100;
+	for (int k = 0; k < 101; k++) {
+		if (one%2==0) {
+			System.out.println(one);
+		}
+		one--;
+	}
+	for (int k = 0; k < 101; k++) {
+		 if (k%2==1) {
+			System.out.println(k);
+		} }
+			
+		
+		
 	
-	
+	for (int p = 0; p < 101; p++) {
+		if (p%2==0) {
+			System.out.println(p+" is even");
+		} else {
+			System.out.println(p+" is odd");
+		}}
+	for (int k = 0; k < 778; k++) {
+		 if (k%7==0) {
+			System.out.println(k);
+		} }
+	int age=1;
+	for (int k = 2009; k < 2021; k++) {
+		 
+			System.out.println("In "+k+" I was "+age);
+			age++;
+		 }
 }
 }
+
