@@ -82,11 +82,15 @@ if (num<CrazyDiamond) {
 			}
 
 		 void skill4() {// In a pop-up, ask the user for the city they live in 
-
+String city=JOptionPane.showInputDialog("In what city do you reside?");
 
 
 		// If they answered "San Diego", tell them they live in America's Finest City 
-
+if (city.equalsIgnoreCase("San Diego")) {
+	JOptionPane.showMessageDialog(null, "You live in America's finest city.");
+}else {
+	JOptionPane.showMessageDialog(null, "Get out of that trash pit and move to San Diego.");
+}
 
 
 		// Otherwise, tell them to move to San Diego 
@@ -95,12 +99,17 @@ if (num<CrazyDiamond) {
 
 		// Create a variable - cars - and initialize it to the number of cars your family has.
 			 // If there are 0 cars, use a pop-up to display, "I bet you use public transportation." 
-
-
+String car=JOptionPane.showInputDialog("How many cars does your family have?");
+int cars=Integer.parseInt(car);
 
 		// If there is 1 car, use a pop-up to display the make/model of the car 
 
-
+if (cars==0) {
+	JOptionPane.showMessageDialog(null, "I be you use public transportation");
+}else if(cars>1) {
+	cars=cars*4;
+	JOptionPane.showMessageDialog(null, "The number of wheels between your cars are "+cars);
+}
 
 		// If there is more than 1 car, use a pop-up to display how many wheels the
 			 // cars have between them. 
@@ -111,8 +120,8 @@ if (num<CrazyDiamond) {
 
 		 void skill5() {// In a pop-up, ask the user for the name of their school 
 
-
-
+String School=JOptionPane.showInputDialog("What is the name of your school?");
+JOptionPane.showMessageDialog(null, "Your school, "+School+", is a fantastic school.");
 		// In another pop-up, tell the user, that their school is a fantastic school.// You must include the name of the school in the message. 
 
 
