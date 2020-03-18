@@ -29,6 +29,8 @@ if (Hour<=2) {
 	// they're a Code Ninja
 else if (Hour>=3&&Hour<=5) {
 	JOptionPane.showMessageDialog(null, "You're a Code Ninja!!");
+}else if(Hour>5) {
+	playBatmanTheme();
 }
 	// 4. If it is more than 5, call the method below to play the Batman theme song.
 }
